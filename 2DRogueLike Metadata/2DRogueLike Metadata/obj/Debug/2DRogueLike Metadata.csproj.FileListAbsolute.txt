@@ -1,0 +1,14 @@
+C:\Users\Public\Documents\VS\2DRogueLike Metadata\2DRogueLike Metadata\bin\Debug\2DRogueLike Metadata.exe.config
+C:\Users\Public\Documents\VS\2DRogueLike Metadata\2DRogueLike Metadata\obj\Debug\2DRogueLike Metadata.csprojResolveAssemblyReference.cache
+C:\Users\Public\Documents\VS\2DRogueLike Metadata\2DRogueLike Metadata\obj\Debug\_2DRogueLike_Metadata.Properties.Resources.resources
+C:\Users\Public\Documents\VS\2DRogueLike Metadata\2DRogueLike Metadata\obj\Debug\2DRogueLike Metadata.csproj.GenerateResource.Cache
+C:\Users\Public\Documents\VS\2DRogueLike Metadata\2DRogueLike Metadata\bin\Debug\2DRogueLike Metadata.exe
+C:\Users\Public\Documents\VS\2DRogueLike Metadata\2DRogueLike Metadata\bin\Debug\2DRogueLike Metadata.pdb
+C:\Users\Public\Documents\VS\2DRogueLike Metadata\2DRogueLike Metadata\bin\Debug\GeneticSharp.Domain.dll
+C:\Users\Public\Documents\VS\2DRogueLike Metadata\2DRogueLike Metadata\bin\Debug\GeneticSharp.Extensions.dll
+C:\Users\Public\Documents\VS\2DRogueLike Metadata\2DRogueLike Metadata\bin\Debug\GeneticSharp.Infrastructure.Framework.dll
+C:\Users\Public\Documents\VS\2DRogueLike Metadata\2DRogueLike Metadata\bin\Debug\GeneticSharp.Infrastructure.Threading.dll
+C:\Users\Public\Documents\VS\2DRogueLike Metadata\2DRogueLike Metadata\bin\Debug\NAudio.dll
+C:\Users\Public\Documents\VS\2DRogueLike Metadata\2DRogueLike Metadata\obj\Debug\2DRogueLike Metadata.exe
+C:\Users\Public\Documents\VS\2DRogueLike Metadata\2DRogueLike Metadata\obj\Debug\2DRogueLike Metadata.pdb
+C:\Users\Public\Documents\VS\2DRogueLike Metadata\2DRogueLike Metadata\obj\Debug\_2DRogueLike_Metadata.Painter.resources
