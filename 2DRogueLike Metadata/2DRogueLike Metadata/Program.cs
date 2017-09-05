@@ -38,7 +38,7 @@ namespace _2DRogueLike_Metadata
             var chromosome = new FloatingPointChromosome(
                 //lvl, hp, food, ruletype, rule, seed, tempo, pitch, r1, r2, r3
                 new double[] { 0, 0, 0, 7, 30, 32, 23, 23, 0, 0, 0 }, //min values
-                new double[] { 50, 500, 5, 1800, 9999999999, 99999999, 288, 72, 999, 999, 999}, //max values
+                new double[] { 50, 500, 5, 1800, 999999999, 9999999, 288, 72, 999, 999, 999}, //max values
                 new int[] { 6, 9, 3, 11, 34, 27, 9, 7, 10, 10, 10}, //bits required for values
                 new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } //bits for fractals
                 );

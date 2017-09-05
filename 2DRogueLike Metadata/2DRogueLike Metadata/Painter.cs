@@ -32,33 +32,9 @@ namespace _2DRogueLike_Metadata
             setFood(food);
             enemy = (int)Math.Log(level, 2f);
             wall = rng.Next(1, 9);
-            //ValidateParams(tempParams);
             playMusic();
         }
-
-        private void ValidateParams(int[] tempParams)
-        {
-
-            if (tempParams[0] < 0 || tempParams[0] > 50 ||
-                tempParams[1] < 0 || tempParams[1] > 500 ||
-                tempParams[2] < 0 || tempParams[2] > 5 ||
-                tempParams[3] < 7 || tempParams[3] > 1800 ||
-                tempParams[4] < 30 || tempParams[4] > 999999999 ||
-                tempParams[5] < 32 || tempParams[5] > 100000000 ||
-                tempParams[6] < 23 || tempParams[6] > 288 ||
-                tempParams[7] < 23 || tempParams[7] > 72 ||
-                tempParams[8] < 0 || tempParams[8] > 1000 ||
-                tempParams[9] < 0 || tempParams[9] > 1000 ||
-                tempParams[10] < 0 || tempParams[10] > 1000
-                ) {
-
-                Debug.WriteLine("invalid");
-                DialogResult = DialogResult.OK;
-                answer = 0;
-                //Close();
-            }
-        }
-
+        
         public Painter(GeneticSharp.Domain.Chromosomes.Gene[] genes)
         {
             InitializeComponent();
