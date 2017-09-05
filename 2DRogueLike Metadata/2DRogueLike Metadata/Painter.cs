@@ -17,9 +17,10 @@ namespace _2DRogueLike_Metadata
         public static int food = rng.Next(0, 6);
         public static int wall = rng.Next(1, 9);
         public static int[,] grid = new int[8, 8];
-        private static int[] tempParams = new int[11];
+        private static double[] tempParams = new double[11];
 
         private GeneticSharp.Domain.Chromosomes.Gene[] gene;
+        private GeneticSharp.Domain.Chromosomes.IChromosome chromosome;
 
         public double answer { get; set; }
 
@@ -31,7 +32,7 @@ namespace _2DRogueLike_Metadata
             setFood(food);
             enemy = (int)Math.Log(level, 2f);
             wall = rng.Next(1, 9);
-            ValidateParams(tempParams);
+            //ValidateParams(tempParams);
             playMusic();
         }
 
@@ -58,13 +59,23 @@ namespace _2DRogueLike_Metadata
             }
         }
 
-        public Painter(GeneticSharp.Domain.Chromosomes.Gene[] gene)
+        public Painter(GeneticSharp.Domain.Chromosomes.Gene[] genes)
         {
             InitializeComponent();
-            tempParams = new int[] { binArrayToint(gene, 6, 5), binArrayToint(gene, 9, 14), binArrayToint(gene, 3, 17), binArrayToint(gene, 11, 28), binArrayToint(gene, 34, 62), binArrayToint(gene, 27, 89), binArrayToint(gene, 9, 98), binArrayToint(gene, 7, 105), binArrayToint(gene, 10, 115), binArrayToint(gene, 10, 125), binArrayToint(gene, 10, 135)};
+            this.gene = genes;
+            //tempParams = new int[] { binArrayToint(gene, 6, 5), binArrayToint(gene, 9, 14), binArrayToint(gene, 3, 17), binArrayToint(gene, 11, 28), binArrayToint(gene, 34, 62), binArrayToint(gene, 27, 89), binArrayToint(gene, 9, 98), binArrayToint(gene, 7, 105), binArrayToint(gene, 10, 115), binArrayToint(gene, 10, 125), binArrayToint(gene, 10, 135)};
+            GeneticSharp.Domain.Chromosomes.FloatingPointChromosome tempChromosome = new GeneticSharp.Domain.Chromosomes.FloatingPointChromosome(
+                new double[] { 0, 0, 0, 7, 30, 32, 23, 23, 0, 0, 0 }, //min values
+                new double[] { 50, 500, 5, 1800, 9999999999, 99999999, 288, 72, 999, 999, 999 }, //max values
+                new int[] { 6, 9, 3, 11, 34, 27, 9, 7, 10, 10, 10 }, //bits required for values
+                new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } //bits for fractals
+                );
+
+            tempChromosome.ReplaceGenes(0, genes);
+            tempParams = tempChromosome.ToFloatingPoints();
+
             Debug.WriteLine(tempParams[0] + " " + tempParams[1] + " " + tempParams[2] + " " + tempParams[3] + " " + tempParams[4] + " " + tempParams[5] + " " + tempParams[6] + " " + tempParams[7] + " " + tempParams[8] + " " + tempParams[9] + " " + tempParams[10]);
-            this.gene = gene;
-            initValues(tempParams[0], tempParams[1], tempParams[2]);
+            initValues((int)tempParams[0], (int)tempParams[1], (int)tempParams[2]);
             setupNext();
             
         }
@@ -116,15 +127,15 @@ namespace _2DRogueLike_Metadata
             int step = (int)(tempParams[6] * 30 / 60);
             string url = @"https://www.wolframcloud.com/objects/user-a13d29f3-43bf-4b00-8e9b-e55639ecde19/NKMMusicDownload" +
                 "?id=NKM-G-10-" + 
-                tempParams[3] + "-" + 
-                tempParams[4] + "-1-" + 
-                tempParams[5] + "-" + 
+                (int)tempParams[3] + "-" +
+                (int)tempParams[4] + "-1-" +
+                (int)tempParams[5] + "-" + 
                 step + "-" +
-                tempParams[6] + "-4-2773-" + 
-                tempParams[7] + "-0-1-" + 
-                getRole(tempParams[8], roles) + "-1-" +
-                getRole(tempParams[9], roles) + "-1-" + 
-                getRole(tempParams[10], roles) + "-0-0-0-0-0&form=WAV";
+                (int)tempParams[6] + "-4-2773-" +
+                (int)tempParams[7] + "-0-1-" + 
+                getRole((int)tempParams[8], roles) + "-1-" +
+                getRole((int)tempParams[9], roles) + "-1-" + 
+                getRole((int)tempParams[10], roles) + "-0-0-0-0-0&form=WAV";
 
             Debug.WriteLine(url);
 

@@ -45,7 +45,7 @@ namespace _2DRogueLike_Metadata
             var population = new Population(5, 25, chromosome); //min-max population
             var fitness = new myFitness();
             var selection = new EliteSelection();
-            var crossover = new CutAndSpliceCrossover();
+            var crossover = new TwoPointCrossover();
             var mutation = new FlipBitMutation();
             var termination = new FitnessStagnationTermination(10);
 

@@ -13,6 +13,7 @@ namespace _2DRogueLike_Metadata
         double answer;
         public double Evaluate(IChromosome chromosome)
         {
+
             //throw new NotImplementedException();
             using (var prompt = new _2DRogueLike_Metadata.Painter(chromosome.GetGenes()))
             {
