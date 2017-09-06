@@ -87,31 +87,31 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="ANFIS">
- <HintPath>C:/Users/Public/Documents/Unity Projects/2DRoguelike/Assets/Plugins/ANFIS.dll</HintPath>
+ <HintPath>C:/Users/Simin/Documents/GitHub/B.SC-Project/2DRoguelike/Assets/Plugins/ANFIS.dll</HintPath>
  </Reference>
  <Reference Include="GeneticSharp.Domain">
- <HintPath>C:/Users/Public/Documents/Unity Projects/2DRoguelike/Assets/Plugins/GeneticSharp.Domain.dll</HintPath>
+ <HintPath>C:/Users/Simin/Documents/GitHub/B.SC-Project/2DRoguelike/Assets/Plugins/GeneticSharp.Domain.dll</HintPath>
  </Reference>
  <Reference Include="GeneticSharp.Extensions">
- <HintPath>C:/Users/Public/Documents/Unity Projects/2DRoguelike/Assets/Plugins/GeneticSharp.Extensions.dll</HintPath>
+ <HintPath>C:/Users/Simin/Documents/GitHub/B.SC-Project/2DRoguelike/Assets/Plugins/GeneticSharp.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="GeneticSharp.Infrastructure.Framework">
- <HintPath>C:/Users/Public/Documents/Unity Projects/2DRoguelike/Assets/Plugins/GeneticSharp.Infrastructure.Framework.dll</HintPath>
+ <HintPath>C:/Users/Simin/Documents/GitHub/B.SC-Project/2DRoguelike/Assets/Plugins/GeneticSharp.Infrastructure.Framework.dll</HintPath>
  </Reference>
  <Reference Include="GeneticSharp.Infrastructure.Threading">
- <HintPath>C:/Users/Public/Documents/Unity Projects/2DRoguelike/Assets/Plugins/GeneticSharp.Infrastructure.Threading.dll</HintPath>
+ <HintPath>C:/Users/Simin/Documents/GitHub/B.SC-Project/2DRoguelike/Assets/Plugins/GeneticSharp.Infrastructure.Threading.dll</HintPath>
  </Reference>
  <Reference Include="NCalc">
- <HintPath>C:/Users/Public/Documents/Unity Projects/2DRoguelike/Assets/Plugins/NCalc.dll</HintPath>
+ <HintPath>C:/Users/Simin/Documents/GitHub/B.SC-Project/2DRoguelike/Assets/Plugins/NCalc.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/Public/Documents/Unity Projects/2DRoguelike/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Simin/Documents/GitHub/B.SC-Project/2DRoguelike/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="NLog">
- <HintPath>C:/Users/Public/Documents/Unity Projects/2DRoguelike/Assets/Plugins/NLog.dll</HintPath>
+ <HintPath>C:/Users/Simin/Documents/GitHub/B.SC-Project/2DRoguelike/Assets/Plugins/NLog.dll</HintPath>
  </Reference>
  <Reference Include="SmartThreadPool">
- <HintPath>C:/Users/Public/Documents/Unity Projects/2DRoguelike/Assets/Plugins/SmartThreadPool.dll</HintPath>
+ <HintPath>C:/Users/Simin/Documents/GitHub/B.SC-Project/2DRoguelike/Assets/Plugins/SmartThreadPool.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
