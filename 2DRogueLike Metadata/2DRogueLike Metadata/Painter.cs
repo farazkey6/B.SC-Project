@@ -123,8 +123,21 @@ namespace _2DRogueLike_Metadata
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
             using (Stream stream = response.GetResponseStream())
             {
-                player = new System.Media.SoundPlayer(stream);
-                player.Play();
+                bool done = false;
+                    while (!done)
+                        try
+                {
+                    player = new System.Media.SoundPlayer(stream);
+                    player.Play();
+                }
+                        catch
+                {
+
+                }
+                        finally
+                {
+                        done = true;
+                }
             }
         }
 
@@ -275,6 +288,12 @@ namespace _2DRogueLike_Metadata
         {
 
             Painter.food = food;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+            this.AcceptButton = this.button1;
         }
     }
 }

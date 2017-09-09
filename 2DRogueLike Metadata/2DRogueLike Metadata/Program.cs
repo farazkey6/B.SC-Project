@@ -47,7 +47,7 @@ namespace _2DRogueLike_Metadata
             var selection = new EliteSelection();
             var crossover = new TwoPointCrossover();
             var mutation = new FlipBitMutation();
-            var termination = new FitnessStagnationTermination(10);
+            var termination = new GenerationNumberTermination(10);
 
             var ga = new GeneticAlgorithm(
                 population,
