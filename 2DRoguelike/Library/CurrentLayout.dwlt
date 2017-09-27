@@ -46,7 +46,11 @@ MonoBehaviour:
   m_MaxSize: {x: 12008, y: 8042}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 49
+=======
+  controlID: 9
+>>>>>>> parent of 87867a2... Tidy Up
 =======
   controlID: 9
 >>>>>>> parent of 87867a2... Tidy Up
@@ -340,9 +344,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 46260000
     m_LastClickedID: 9798
     m_ExpandedIDs: 00000000462600006a26000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 6c2a0000
+    m_LastClickedID: 10860
+    m_ExpandedIDs: 000000006c2a0000802a000000ca9a3bffffff7f
+>>>>>>> parent of 87867a2... Tidy Up
 =======
     m_SelectedIDs: 6c2a0000
     m_LastClickedID: 10860
@@ -406,6 +416,9 @@ MonoBehaviour:
 =======
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
+>>>>>>> parent of 87867a2... Tidy Up
+=======
 >>>>>>> parent of 87867a2... Tidy Up
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
